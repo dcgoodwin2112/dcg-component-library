@@ -52,7 +52,7 @@ export const SteppedProgress = ({
   current = 0,
   size = "medium",
   activeColor = "greenyellow",
-  emptyColor = "red",
+  emptyColor = "lightgrey",
   borderColor = "lightgrey",
   ariaText
 }: SteppedProgressProps) => {
