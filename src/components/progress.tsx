@@ -9,15 +9,39 @@ const CONFIG = {
 };
 
 type ProgressProps = {
+  /**
+   * The value represented by the current progress bar state.
+   */
   value: number;
+  /**
+   * The text that will be available to screen readers
+   */
   ariaText: string;
-  size?: "small" | "medium" | "large";
-  borderColor?: string;
-  fillColor?: string;
-  minValue?: number;
-  maxValue?: number;
+  /**
+   * A predefined size value that affect the height of the progress bar
+   */
+  size: "small" | "medium" | "large";
+  /**
+   * The progress bar border color value
+   */
+  borderColor: string;
+  /**
+   * The progress bar fill color value
+   */
+  fillColor: string;
+  /**
+   * The lowest value the progress bar can be set to
+   */
+  minValue: number;
+  /**
+   * The highest value the progress bar can be set to
+   */
+  maxValue: number;
 };
 
+/**
+ * UI Component indicating progress towards completing an action.
+ */
 export const Progress = ({
   value,
   ariaText,
@@ -33,6 +57,7 @@ export const Progress = ({
     <ProgressWrapper
       size={sizeVal}
       borderColor={borderColor}
+      role="progressbar"
       aria-valuemin={minValue}
       aria-valuenow={value}
       aria-valuemax={maxValue}
