@@ -16,12 +16,27 @@ enum MONTH {
 }
 
 interface TimeTagDateProps {
+  /**
+   * Year integer value
+   */
   year: number;
+  /**
+   * Month integer value
+   */
   month?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+  /**
+   * Day integer value
+   */
   day?: number;
+  /**
+   * Toggles full month text or 3 letter abbreviation
+   */
   abvMonth: boolean;
 }
 
+/**
+ * UI Component provides a shorthand method of formatting dates as HTML time tags
+ */
 export const TimeTagDate = ({
   year,
   month,

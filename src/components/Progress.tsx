@@ -47,7 +47,7 @@ export const Progress = ({
   ariaText,
   size = "medium",
   borderColor = "lightgrey",
-  fillColor = "blueviolet",
+  fillColor = "rebeccapurple",
   minValue = 0,
   maxValue = 100,
 }: ProgressProps) => {
