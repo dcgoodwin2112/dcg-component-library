@@ -16,7 +16,7 @@ type ProgressProps = {
   /**
    * The text that will be available to screen readers
    */
-  ariaText: string;
+  ariaLabel: string;
   /**
    * A predefined size value that affect the height of the progress bar
    */
@@ -44,7 +44,7 @@ type ProgressProps = {
  */
 export const Progress = ({
   value,
-  ariaText,
+  ariaLabel,
   size = "medium",
   borderColor = "lightgrey",
   fillColor = "rebeccapurple",
@@ -61,7 +61,7 @@ export const Progress = ({
       aria-valuemin={minValue}
       aria-valuenow={value}
       aria-valuemax={maxValue}
-      aria-valuetext={ariaText}
+      aria-label={ariaLabel}
     >
       <ProgressInner
         size={sizeVal}

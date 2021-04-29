@@ -22,5 +22,5 @@ Default.args = {
   size: "medium",
   steps: 10,
   current: 5,
-  ariaText: "Loading...",
+  ariaLabel: "Loading...",
 };

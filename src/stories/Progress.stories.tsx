@@ -20,5 +20,5 @@ export const Default = Template.bind({});
 Default.args = {
   size: "medium",
   value: "50",
-  ariaText: "Loading",
+  ariaLabel: "Loading",
 };

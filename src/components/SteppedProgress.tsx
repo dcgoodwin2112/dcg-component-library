@@ -39,7 +39,7 @@ interface SteppedProgressProps extends SteppedBase {
   /**
    * The text that will be available to screen readers
    */
-  ariaText: string;
+  ariaLabel: string;
 }
 
 /**
@@ -54,7 +54,7 @@ export const SteppedProgress = ({
   activeColor = "greenyellow",
   emptyColor = "lightgrey",
   borderColor = "lightgrey",
-  ariaText
+  ariaLabel
 }: SteppedProgressProps) => {
   const currentVal = current > steps ? steps : current < 0 ? 0 : current;
   return (
@@ -63,7 +63,7 @@ export const SteppedProgress = ({
       aria-valuemin={0}
       aria-valuenow={currentVal}
       aria-valuemax={steps}
-      aria-valuetext={ariaText}
+      aria-label={ariaLabel}
     >
       {Array(steps)
         .fill(1)
