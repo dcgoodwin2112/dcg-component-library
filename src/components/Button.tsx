@@ -38,7 +38,7 @@ type Variant = "primary" | "secondary";
 
 type ButtonType = "submit" | "reset" | "button";
 
-interface ButtonProps {
+export interface ButtonProps {
   /**
    * Button text or content
    */
@@ -80,13 +80,9 @@ interface ButtonProps {
    */
   ariaLabel?: string;
   /**
-   * Optional aria-labeled-by attribute
-   */
-  ariaLabeledBy?: string;
-  /**
    * Button click handler function
    */
-  onClick: (event) => void;
+  onClick: (event: any) => void;
 }
 
 /**
@@ -103,8 +99,7 @@ export const Button = ({
   textColor,
   onClick,
   name,
-  ariaLabel,
-  ariaLabeledBy
+  ariaLabel
 }: ButtonProps) => {
   const textSize = `${CONFIG.font[size]}rem`;
   const padding = `${CONFIG.paddingBlock[size]}px ${CONFIG.paddingInline[size]}px`;
@@ -132,7 +127,6 @@ export const Button = ({
         name,
       }}
       aria-label={ariaLabel}
-      aria-labeledby={ariaLabeledBy}
     >
       {children}
     </Wrapper>

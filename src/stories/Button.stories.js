@@ -2,6 +2,7 @@ import React from "react"
 
 import { Button } from "../index"
 
+// eslint-disable-next-line
 export default {
   title: "Library/Button",
   component: Button,

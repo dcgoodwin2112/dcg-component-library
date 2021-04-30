@@ -2,6 +2,7 @@ import React from "react";
 
 import { SteppedProgress } from "../index";
 
+// eslint-disable-next-line
 export default {
   title: "Library/Stepped Progress Bar",
   component: SteppedProgress,

@@ -2,6 +2,7 @@ import React from "react";
 
 import { Progress } from "../index";
 
+// eslint-disable-next-line
 export default {
   title: "Library/Progress Bar",
   component: Progress,

@@ -2,6 +2,7 @@ import React from "react";
 
 import { TimeTagDate } from "../index";
 
+// eslint-disable-next-line
 export default {
   title: "Library/Time Tag Date Formatter",
   component: TimeTagDate,
